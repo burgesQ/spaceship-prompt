@@ -28,7 +28,6 @@ source "$SPACESHIP_ROOT/sections/git_diff.zsh"
 source "$SPACESHIP_ROOT/sections/git_hash.zsh"
 source "$SPACESHIP_ROOT/sections/git_commit_msg.zsh"
 
-
 spaceship::precompile "$SPACESHIP_ROOT/sections/git_branch.zsh"
 spaceship::precompile "$SPACESHIP_ROOT/sections/git_tag.zsh"
 spaceship::precompile "$SPACESHIP_ROOT/sections/git_status.zsh"

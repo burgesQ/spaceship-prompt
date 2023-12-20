@@ -18,6 +18,8 @@ SPACESHIP_GIT_TAG_COLOR="${SPACESHIP_GIT_TAG_COLOR="blue"}"
 # Section
 # ------------------------------------------------------------------------------
 
+# Show the closest git tag:
+#   spaceship_git_tag
 spaceship_git_tag() {
   [[ $SPACESHIP_GIT_TAG_SHOW == false ]] && return
 
