@@ -15,6 +15,8 @@ SPACESHIP_GIT_DIFFSTAT_SUFFIX="${SPACESHIP_GIT_DIFFSTAT_SUFFIX=""}"
 # Section
 # ------------------------------------------------------------------------------
 
+# Show git diff count:
+#   spaceship_git_diff
 spaceship_git_diff() {
   [[ $SPACESHIP_GIT_DIFFSTAT_SHOW == false ]] && return
 
