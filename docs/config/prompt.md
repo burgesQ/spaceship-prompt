@@ -70,6 +70,7 @@ SPACESHIP_PROMPT_ORDER=(
   docker_compose # Docker section
   aws            # Amazon Web Services section
   gcloud         # Google Cloud Platform section
+  azure          # Azure section
   venv           # virtualenv section
   conda          # conda virtualenv section
   dotnet         # .NET section
@@ -116,23 +117,24 @@ You can customize every section of the prompt with section's options. Check out 
 
 Besides built-in sections, you can add external section to your prompt or build a custom one.
 
-[Browse built-in sections](/sections){ .md-button }
-[Browse all sections](/registry){ .md-button }
+[Browse built-in sections](/sections/index.md){ .md-button }
+[Browse all sections](../registry.md){ .md-button }
 
 ## Prompt-level options
 
 This group of options defines a behavior of prompt and standard parameters for sections displaying.
 
-| Variable                             | Default | Meaning                                          |
-| :----------------------------------- | :-----: | ------------------------------------------------ |
-| `SPACESHIP_PROMPT_ASYNC`             | `true`  | Render prompt asynchronously or not              |
-| `SPACESHIP_PROMPT_ADD_NEWLINE`       | `true`  | Adds a newline character before each prompt line |
-| `SPACESHIP_PROMPT_SEPARATE_LINE`     | `true`  | Make the prompt span across two lines            |
-| `SPACESHIP_PROMPT_FIRST_PREFIX_SHOW` | `false` | Shows a prefix of the first section in prompt    |
-| `SPACESHIP_PROMPT_PREFIXES_SHOW`     | `true`  | Show prefixes before prompt sections or not      |
-| `SPACESHIP_PROMPT_SUFFIXES_SHOW`     | `true`  | Show suffixes before prompt sections or not      |
-| `SPACESHIP_PROMPT_DEFAULT_PREFIX`    | `via·`  | Default prefix for prompt sections               |
-| `SPACESHIP_PROMPT_DEFAULT_SUFFIX`    |   ` `   | Default suffix for prompt section                |
+| Variable                              | Default | Meaning                                             |
+| :------------------------------------ | :-----: | --------------------------------------------------- |
+| `SPACESHIP_PROMPT_ASYNC`              | `true`  | Render prompt asynchronously or not                 |
+| `SPACESHIP_PROMPT_ADD_NEWLINE`        | `true`  | Adds a newline character before each prompt line    |
+| `SPACESHIP_PROMPT_SEPARATE_LINE`      | `true`  | Make the prompt span across two lines               |
+| `SPACESHIP_PROMPT_FIRST_PREFIX_SHOW`  | `false` | Shows a prefix of the first section in prompt       |
+| `SPACESHIP_RPROMPT_FIRST_PREFIX_SHOW` | `false` | Shows a prefix of the first section in right prompt |
+| `SPACESHIP_PROMPT_PREFIXES_SHOW`      | `true`  | Show prefixes before prompt sections or not         |
+| `SPACESHIP_PROMPT_SUFFIXES_SHOW`      | `true`  | Show suffixes before prompt sections or not         |
+| `SPACESHIP_PROMPT_DEFAULT_PREFIX`     | `via·`  | Default prefix for prompt sections                  |
+| `SPACESHIP_PROMPT_DEFAULT_SUFFIX`     |   ` `   | Default suffix for prompt section                   |
 
 Here is a breakdown of these options:
 
@@ -142,7 +144,7 @@ The `SPACESHIP_PROMPT_ASYNC` option defines whether the prompt is rendered async
 
 The synchronous sections are displayed immediately. The asynchronous sections are processed in the background and are displayed when the information is ready to be displayed.
 
-The [`async` section](/sections/async) is used as a placeholder for not yet available asynchronous sections.
+The [`async` section](/sections/async.md) is used as a placeholder for not yet available asynchronous sections.
 
 ### Prompt spacing
 

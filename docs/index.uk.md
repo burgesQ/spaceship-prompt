@@ -118,7 +118,7 @@ companies:
 - Версія пакунку (npm, lerna, cargo, редактор та інші)
 - Поточний рівень заряду батареї та її статус
 - Індикатор для задач, що виконуються у фоновому режимі `✦`
-- Багато [корисної інформації](/sections)
+- Багато [корисної інформації](/sections/index.md)
 - Додатково [інформація на ваш вибір](/advanced/creating-section)
 
 Бажаєте більше можливостей? Будь ласка, [відкрийте задачу](https://github.com/spaceship-prompt/yspaceship-prompt/issues/new/choose) або надішліть пул-реквест.
@@ -127,7 +127,7 @@ companies:
 
 Встановлення Spaceship просте та швидке. Він легко конфігурується і є простим у використанні.
 
-[Встановлення](/getting-started ""){.md-button.md-button--primary} [Конфігурація](/config/intro ""){.md-button}
+[Встановлення](/getting-started ""){.md-button} [Конфігурація](/config/intro ""){.md-button}
 
 ## Підтримка
 
